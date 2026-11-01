@@ -1,0 +1,242 @@
+[
+  {
+    "id": "greet_01",
+    "category": "greet",
+    "text": "亲爱的爷爷奶奶，欢迎来到直播间，祝您今天心情舒畅，身体安康。",
+    "file": "mp3/greet_01.mp3",
+    "duration": 7.32,
+    "seed": 42,
+    "asr": "亲爱的爷爷奶奶,欢迎来到直播间,祝您今天心情舒畅,身体安康。",
+    "score": 1.0
+  },
+  {
+    "id": "greet_02",
+    "category": "greet",
+    "text": "爷爷奶奶们好呀，欢迎进来坐坐，愿您今天顺心顺意。",
+    "file": "mp3/greet_02.mp3",
+    "duration": 5.68,
+    "seed": 7,
+    "asr": "爷爷奶奶们好呀,欢迎进来坐坐,愿您今天顺心顺意。",
+    "score": 1.0
+  },
+  {
+    "id": "greet_03",
+    "category": "greet",
+    "text": "欢迎各位长辈来到直播间，今天咱们一起聊点开心的事。",
+    "file": "mp3/greet_03.mp3",
+    "duration": 5.64,
+    "seed": 42,
+    "asr": "欢迎各位长辈来到直播间今天咱们一起聊点开心的事",
+    "score": 1.0
+  },
+  {
+    "id": "greet_04",
+    "category": "greet",
+    "text": "亲爱的爷爷奶奶，您来了，先歇一歇，听我慢慢跟您说。",
+    "file": "mp3/greet_04.mp3",
+    "duration": 6.1,
+    "seed": 7,
+    "asr": "亲爱的爷爷奶奶,您来了,先歇一歇,听我慢慢跟您说。",
+    "score": 1.0
+  },
+  {
+    "id": "enter_01",
+    "category": "enter",
+    "text": "欢迎新进来的爷爷奶奶，愿您在这里坐得舒服，听得开心。",
+    "file": "mp3/enter_01.mp3",
+    "duration": 5.98,
+    "seed": 42,
+    "asr": "欢迎新进来的爷爷奶奶,愿您在这里坐得舒服,听得开心。",
+    "score": 1.0
+  },
+  {
+    "id": "enter_02",
+    "category": "enter",
+    "text": "又有一位长辈进来了，欢迎您，祝您今天好运常在。",
+    "file": "mp3/enter_02.mp3",
+    "duration": 5.64,
+    "seed": 42,
+    "asr": "又有一位长辈进来了,欢迎您,祝您今天好运常在!",
+    "score": 1.0
+  },
+  {
+    "id": "enter_03",
+    "category": "enter",
+    "text": "欢迎爷爷奶奶进直播间，喝口茶，歇歇脚，咱们慢慢聊。",
+    "file": "mp3/enter_03.mp3",
+    "duration": 5.84,
+    "seed": 42,
+    "asr": "欢迎爷爷奶奶进直播间喝口茶歇歇脚咱们慢慢聊",
+    "score": 1.0
+  },
+  {
+    "id": "enter_04",
+    "category": "enter",
+    "text": "新来的长辈您好，欢迎您，愿您今天收获一份好心情。",
+    "file": "mp3/enter_04.mp3",
+    "duration": 5.72,
+    "seed": 42,
+    "asr": "新来的长辈您好,欢迎您,愿您今天收获一份好心情。",
+    "score": 1.0
+  },
+  {
+    "id": "gift_01",
+    "category": "gift",
+    "text": "谢谢爷爷奶奶送来的爱心，您的心意我收到了，祝您平安顺遂。",
+    "file": "mp3/gift_01.mp3",
+    "duration": 7.06,
+    "seed": 42,
+    "asr": "谢谢爷爷奶奶送来的爱心,您的心意我收到了,祝您平安顺遂。",
+    "score": 1.0
+  },
+  {
+    "id": "gift_02",
+    "category": "gift",
+    "text": "感谢长辈的礼物，愿您这份善意，换来满满的好运。",
+    "file": "mp3/gift_02.mp3",
+    "duration": 5.22,
+    "seed": 42,
+    "asr": "感谢长辈的礼物,愿您这份善意换来满满的好运。",
+    "score": 1.0
+  },
+  {
+    "id": "gift_03",
+    "category": "gift",
+    "text": "谢谢您的礼物，祝您身体硬朗，日子越过越舒心。",
+    "file": "mp3/gift_03.mp3",
+    "duration": 4.76,
+    "seed": 42,
+    "asr": "谢谢您的礼物,祝您身体硬朗,日子越过越舒心。",
+    "score": 1.0
+  },
+  {
+    "id": "gift_04",
+    "category": "gift",
+    "text": "收到爷爷奶奶的礼物啦，愿您天天有盼头，日子都顺心。",
+    "file": "mp3/gift_04.mp3",
+    "duration": 6.26,
+    "seed": 42,
+    "asr": "收到爷爷奶奶的礼物了愿您天天有盼头日子都顺心",
+    "score": 0.9545
+  },
+  {
+    "id": "interact_01",
+    "category": "interact",
+    "text": "谢谢爷爷奶奶点的关注，愿您在这里天天都有好心情。",
+    "file": "mp3/interact_01.mp3",
+    "duration": 5.84,
+    "seed": 42,
+    "asr": "谢谢爷爷奶奶点的关注,愿您在这里天天都有好心情。",
+    "score": 1.0
+  },
+  {
+    "id": "interact_02",
+    "category": "interact",
+    "text": "感谢长辈的点赞，您的每一个赞，都是对我的鼓励。",
+    "file": "mp3/interact_02.mp3",
+    "duration": 5.04,
+    "seed": 42,
+    "asr": "感謝長輩的點贊,您的每一個贊都是對我的鼓勵。",
+    "score": 1.0
+  },
+  {
+    "id": "interact_03",
+    "category": "interact",
+    "text": "欢迎爷爷奶奶在评论区聊两句，咱们一起乐呵乐呵。",
+    "file": "mp3/interact_03.mp3",
+    "duration": 5.18,
+    "seed": 7,
+    "asr": "欢迎爷爷奶奶在评论区聊两句,咱们一起乐呵乐呵。",
+    "score": 1.0
+  },
+  {
+    "id": "interact_04",
+    "category": "interact",
+    "text": "新来的爷爷奶奶，点个关注不迷路，下次还能找到我。",
+    "file": "mp3/interact_04.mp3",
+    "duration": 5.38,
+    "seed": 42,
+    "asr": "新来的爷爷奶奶,点个关注不迷路,下次还能找到我。",
+    "score": 1.0
+  },
+  {
+    "id": "print_01",
+    "category": "print",
+    "text": "爷爷奶奶，您的专属头像开始打印啦，请稍等一下。",
+    "file": "mp3/print_01.mp3",
+    "duration": 5.08,
+    "seed": 42,
+    "asr": "爺爺奶奶,您的專屬頭像開始打印了,請稍等一下。",
+    "score": 0.95
+  },
+  {
+    "id": "print_02",
+    "category": "print",
+    "text": "正在为您一层一层打印，马上就好，别着急。",
+    "file": "mp3/print_02.mp3",
+    "duration": 4.7,
+    "seed": 7,
+    "asr": "正在為您一層一層打印,馬上就好,別著急!",
+    "score": 0.9412
+  },
+  {
+    "id": "print_03",
+    "category": "print",
+    "text": "您的头像打印完成啦，快看看满不满意。",
+    "file": "mp3/print_03.mp3",
+    "duration": 3.82,
+    "seed": 42,
+    "asr": "您的头像打印完成了,快看看满不满意",
+    "score": 0.9375
+  },
+  {
+    "id": "print_04",
+    "category": "print",
+    "text": "打印机正在工作，爷爷奶奶先喝口茶，休息一下。",
+    "file": "mp3/print_04.mp3",
+    "duration": 5.18,
+    "seed": 42,
+    "asr": "打印机正在工作,爷爷奶奶先喝口茶,休息一下。",
+    "score": 1.0
+  },
+  {
+    "id": "close_01",
+    "category": "close",
+    "text": "今天的直播就到这里，祝爷爷奶奶们身体健康，平安喜乐。",
+    "file": "mp3/close_01.mp3",
+    "duration": 5.92,
+    "seed": 42,
+    "asr": "今天的直播就到这里,祝爷爷奶奶们身体健康,平安喜乐。",
+    "score": 1.0
+  },
+  {
+    "id": "close_02",
+    "category": "close",
+    "text": "感谢爷爷奶奶的陪伴，愿您今晚睡个好觉，明天有个好心情。",
+    "file": "mp3/close_02.mp3",
+    "duration": 6.18,
+    "seed": 42,
+    "asr": "感谢爷爷奶奶的陪伴,愿您今晚睡个好觉,明天有个好心情。",
+    "score": 1.0
+  },
+  {
+    "id": "close_03",
+    "category": "close",
+    "text": "天气凉了，爷爷奶奶记得添衣，照顾好自己。",
+    "file": "mp3/close_03.mp3",
+    "duration": 4.72,
+    "seed": 123,
+    "asr": "天气凉了,爷爷奶奶记得天衣,照顾好自己。",
+    "score": 0.9412
+  },
+  {
+    "id": "close_04",
+    "category": "close",
+    "text": "咱们下次直播再见，祝您一路顺风，万事顺心。",
+    "file": "mp3/close_04.mp3",
+    "duration": 5.04,
+    "seed": 42,
+    "asr": "咱们下次直播再见,祝您一路顺风,万事顺心。",
+    "score": 1.0
+  }
+]

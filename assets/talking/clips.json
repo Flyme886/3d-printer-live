@@ -1,0 +1,16 @@
+{
+  "_说明": "话术短片清单。clips 里每个话术可以放多段（随机播一段），文件放 assets/talking/ 下，建议 1:1、720×720、3~5 秒、无声。",
+  "characters": {
+    "baby": {
+      "name": "财源宝宝",
+      "cover": "source-crop.png",
+      "clips": {
+        "idle": ["idle-1.mp4"],
+        "welcome": ["talk-1.mp4"],
+        "thanks": ["talk-1.mp4"],
+        "printing": ["talk-1.mp4"],
+        "done": ["talk-1.mp4"]
+      }
+    }
+  }
+}

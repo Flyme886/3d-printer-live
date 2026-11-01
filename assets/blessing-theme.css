@@ -1,0 +1,320 @@
+/* ============================================================
+   长辈祝福直播间 · 主题皮肤（纯代码，无图片依赖）
+   覆盖 index.html 的内联样式；加载顺序在内联样式之后，同权重即可覆盖。
+   ============================================================ */
+
+:root{
+  --ink:#15100e;
+  --ink-2:#1d1512;
+  --panel:#1f1713;
+  --panel-2:#271d17;
+  --line:#3b2c24;
+  --line-soft:#2e2119;
+  --red:#b8332a;
+  --red-2:#8d211c;
+  --red-hi:#e0503a;
+  --gold:#dda94f;
+  --gold-2:#f3d9a4;
+  --paper:#f9ecd6;
+  --paper-2:#efdcbc;
+  --text:#f3e9dc;
+  --muted:#b19d8b;
+  --muted-2:#8d7a68;
+  --serif:"Songti SC","STSong","Noto Serif SC","Source Han Serif SC","SimSun",serif;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:
+    radial-gradient(120% 80% at 50% -10%, #2a1611 0%, #15100e 55%, #0f0b0a 100%);
+  color:var(--text);
+  font:14px 'Microsoft YaHei',sans-serif;
+}
+
+/* ---------- 顶栏 ---------- */
+header{
+  height:68px;
+  background:linear-gradient(180deg,#1b1310,#15100e);
+  border-bottom:1px solid var(--line);
+  padding:0 28px;
+}
+.brand{font-weight:800;font-size:18px;letter-spacing:1px;display:flex;align-items:center}
+.brand b{
+  color:#8d211c;background:linear-gradient(160deg,#f3d9a4,#dda94f);
+  width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;
+  border-radius:7px;font-size:15px;margin-right:10px;box-shadow:0 0 0 1px #a9791f inset
+}
+.tag{color:var(--muted-2);letter-spacing:2px}
+.brand a{color:var(--gold-2)!important;opacity:.72}
+.brand a:hover{opacity:1}
+.status{color:var(--muted)}
+.dot{background:var(--gold);box-shadow:0 0 8px #dda94f99}
+
+/* ---------- 主标题区 ---------- */
+main{max-width:1600px;padding:22px 28px}
+h1{font-family:var(--serif);font-size:26px;letter-spacing:2px;color:#fbf1e0}
+.top p{color:var(--muted-2);letter-spacing:.5px}
+.badge{background:rgba(184,51,42,.16);color:var(--gold-2);border:1px solid #6d3a26}
+
+/* ---------- 面板 ---------- */
+.panel{background:var(--panel);border:1px solid var(--line-soft);border-radius:12px}
+.stagehead,.panelhead{border-bottom:1px solid var(--line-soft);color:#f6ecdd;font-family:var(--serif);letter-spacing:1px}
+.stagehead small,.panelhead small{color:var(--muted-2);font-family:'Microsoft YaHei',sans-serif;letter-spacing:1.5px}
+.body{padding:16px 18px}
+.label{color:var(--muted)}
+.note{color:var(--muted-2);line-height:1.75}
+
+/* ---------- 按钮 ---------- */
+button{
+  background:linear-gradient(180deg,#c33d2f,#9e2a22);
+  color:#fff5e6;border:1px solid #d97a53 inset;border-radius:8px;
+  box-shadow:0 1px 0 rgba(255,255,255,.14) inset,0 6px 16px rgba(120,20,10,.28);
+  letter-spacing:.5px;
+}
+button:hover{filter:brightness(1.1)}
+button.secondary{
+  background:var(--panel-2);color:#e6d6c2;border:1px solid var(--line);
+  box-shadow:none
+}
+button.secondary:hover{background:#33261e}
+button:disabled{opacity:.55}
+
+/* ---------- 输入与下拉 ---------- */
+input,select,textarea{
+  background:#170f0d!important;border:1px solid var(--line)!important;
+  color:var(--text)!important;border-radius:8px!important;
+}
+input:focus,select:focus,textarea:focus{border-color:var(--gold)!important;outline:none}
+select option{background:#1b1310;color:var(--text)}
+
+/* ---------- 指标卡 ---------- */
+.metric{background:var(--panel-2);border:1px solid var(--line-soft);border-radius:9px}
+.metric small{color:var(--muted-2)}
+.metric strong{color:var(--gold-2);font-family:var(--serif)}
+
+/* ---------- 队列 / 记录 ---------- */
+.item{border-bottom:1px solid var(--line-soft)}
+.item b{color:var(--gold)}
+.item small{color:var(--muted-2)!important}
+.empty{color:var(--muted-2)}
+.item img{border:1px solid #5a4130}
+
+/* ---------- 房间 / 镜头栏 ---------- */
+.scene-bar{background:#191210;border-bottom:1px solid var(--line-soft)}
+.scene-bar>span{color:var(--muted-2)}
+.scene-bar button{background:#241a15;color:#cbb9a6;border:1px solid transparent}
+.scene-bar button.selected{background:#41241a;border-color:#a9762f;color:var(--gold-2)}
+.scene-bar button:focus-visible{outline:2px solid var(--gold)}
+
+/* ---------- 画面右下角进度牌 ---------- */
+.print-hud{
+  background:rgba(28,16,12,.82);border:1px solid #8a5a2a;color:#f4dcb4;
+  box-shadow:0 0 24px rgba(200,110,40,.16);backdrop-filter:blur(6px)
+}
+.print-hud b{color:var(--gold-2)}
+.fx-track{background:#ffffff14}
+.fx-track i{background:linear-gradient(90deg,#dda94f,#f3d9a4);box-shadow:0 0 9px #dda94f88}
+
+footer{color:var(--muted-2)}
+
+/* 旧的左下角结果卡让位给新的祝福卡 */
+#stage .result{display:none!important}
+#stage .live{display:none!important}
+
+/* ============================================================
+   画面叠加层（观众能看到的那一层）
+   ============================================================ */
+#blessing-layer{
+  position:absolute;inset:0;pointer-events:none;
+  font-family:'Microsoft YaHei',sans-serif;
+  display:flex;flex-direction:column;justify-content:space-between;
+  padding:18px 22px 26px;
+  z-index:5;
+}
+
+/* 氛围：暖色暗角 + 顶部压暗 + 纸纹噪点，纯 CSS/内联 SVG */
+#blessing-layer .bl-veil{
+  position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(120% 90% at 50% 42%, rgba(0,0,0,0) 42%, rgba(24,8,6,.42) 78%, rgba(16,6,5,.66) 100%),
+    linear-gradient(180deg, rgba(18,8,6,.55) 0%, rgba(18,8,6,0) 22%, rgba(18,8,6,0) 54%, rgba(24,9,6,.5) 70%, rgba(20,8,6,.92) 84%, rgba(16,6,5,.97) 100%);
+  mix-blend-mode:multiply;
+}
+#blessing-layer .bl-grain{
+  position:absolute;inset:0;pointer-events:none;opacity:.055;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E");
+}
+
+/* 左上品牌牌 */
+.bl-brand{
+  position:relative;display:flex;align-items:center;gap:11px;
+  align-self:flex-start;pointer-events:none;
+  padding:9px 16px 9px 10px;border-radius:12px;
+  background:linear-gradient(180deg,rgba(122,28,22,.9),rgba(78,17,14,.88));
+  border:1px solid rgba(224,180,90,.55);
+  box-shadow:0 8px 26px rgba(0,0,0,.38),0 0 0 1px rgba(0,0,0,.25) inset;
+  backdrop-filter:blur(4px)
+}
+.bl-brand .bl-seal{
+  width:38px;height:38px;border-radius:9px;flex:0 0 auto;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(160deg,#f6e0b0,#d9a54a);
+  color:#7d1a14;font-family:var(--serif);font-weight:900;font-size:23px;
+  box-shadow:0 2px 0 #a9791f,0 0 12px rgba(240,200,110,.35) inset
+}
+.bl-brand .bl-title{font-size:16px;font-weight:800;color:#fdf1d8;letter-spacing:1.5px;line-height:1.25}
+.bl-brand .bl-sub{font-size:9px;letter-spacing:2.4px;color:rgba(243,217,164,.68);margin-top:2px}
+.bl-brand .bl-online{
+  margin-left:6px;font-size:11px;color:#ffe6c6;display:flex;align-items:center;gap:5px;
+  padding-left:12px;border-left:1px solid rgba(243,217,164,.25)
+}
+.bl-brand .bl-online i{
+  width:6px;height:6px;border-radius:50%;background:#ff6a4d;
+  box-shadow:0 0 0 3px rgba(255,106,77,.2);animation:pulse 1.8s ease-in-out infinite
+}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+/* 右上：本场已送福计数 */
+.bl-count{
+  position:absolute;top:18px;right:22px;text-align:right;pointer-events:none;
+  color:#f7e3c2;text-shadow:0 2px 10px rgba(0,0,0,.6)
+}
+.bl-count b{display:block;font:900 30px/1 var(--serif);color:#ffdfa6}
+.bl-count span{font-size:10px;letter-spacing:2.5px;color:rgba(243,217,164,.7)}
+
+/* 底部：祝福卡 */
+.bl-card{
+  position:relative;align-self:center;pointer-events:none;
+  display:flex;align-items:center;gap:16px;
+  width:min(620px,86%);padding:15px 22px 15px 18px;
+  background:linear-gradient(165deg,#fffaf0,#f2e0bf);
+  border:1px solid #c9a45c;border-radius:14px;
+  box-shadow:0 14px 40px rgba(0,0,0,.5),0 0 0 4px rgba(201,164,92,.14),0 0 0 1px rgba(255,255,255,.5) inset;
+  transition:opacity .35s ease,transform .35s ease
+}
+.bl-card.is-idle{opacity:.62}
+.bl-card .bl-avatar{
+  width:62px;height:62px;border-radius:50%;flex:0 0 auto;object-fit:cover;
+  background:#e8d3b0;border:2px solid #d8b26a;
+  box-shadow:0 0 0 3px #fff6e4,0 4px 12px rgba(90,50,20,.25)
+}
+.bl-card .bl-body{flex:1;min-width:0}
+.bl-card .bl-who{
+  display:flex;align-items:baseline;gap:10px;
+  font-size:19px;font-weight:800;color:#6d1b14;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap
+}
+.bl-card .bl-who em{
+  font-style:normal;font-size:12px;font-weight:700;color:#9a6a25;
+  background:rgba(201,164,92,.18);border:1px solid rgba(160,120,50,.35);
+  padding:2px 8px;border-radius:20px;flex:0 0 auto
+}
+.bl-card .bl-line{
+  font-family:var(--serif);font-size:16px;color:#5c4029;margin-top:5px;
+  letter-spacing:1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap
+}
+.bl-card .bl-bar{
+  height:3px;margin-top:11px;border-radius:3px;overflow:hidden;
+  background:rgba(140,100,50,.18)
+}
+.bl-card .bl-bar i{
+  display:block;height:100%;width:0;border-radius:3px;
+  background:linear-gradient(90deg,#c98a35,#e8c477);
+  transition:width .28s linear
+}
+.bl-card.is-done .bl-bar{opacity:0}
+
+/* 送福跑马灯 */
+.bl-ticker{
+  position:relative;display:flex;align-items:center;gap:8px;
+  align-self:center;max-width:86%;margin-top:12px;
+  pointer-events:none;overflow:hidden
+}
+.bl-ticker .bl-tk-label{
+  font-size:10px;letter-spacing:2px;color:rgba(243,217,164,.62);flex:0 0 auto
+}
+.bl-ticker .bl-tk-list{display:flex;gap:6px;overflow:hidden}
+.bl-tk-pill{
+  display:flex;align-items:center;gap:6px;flex:0 0 auto;
+  padding:3px 10px 3px 4px;border-radius:20px;
+  background:rgba(38,18,12,.62);border:1px solid rgba(224,180,90,.35);
+  color:#f6e3c4;font-size:11px;max-width:130px
+}
+.bl-tk-pill img{width:18px;height:18px;border-radius:50%;object-fit:cover;border:1px solid #c9a45c}
+.bl-tk-pill span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* 纯画面模式放大（OBS 采集用） */
+body.scene-only #blessing-layer{padding:34px 40px 44px}
+body.scene-only .bl-brand{padding:14px 24px 14px 14px;border-radius:16px}
+body.scene-only .bl-brand .bl-seal{width:56px;height:56px;font-size:34px;border-radius:12px}
+body.scene-only .bl-brand .bl-title{font-size:25px}
+body.scene-only .bl-brand .bl-sub{font-size:11px}
+body.scene-only .bl-brand .bl-online{font-size:15px}
+body.scene-only .bl-count b{font-size:46px}
+body.scene-only .bl-count span{font-size:13px}
+body.scene-only .bl-card{width:min(760px,80%);padding:22px 30px;gap:22px;border-radius:18px}
+body.scene-only .bl-card .bl-avatar{width:88px;height:88px}
+body.scene-only .bl-card .bl-who{font-size:27px}
+body.scene-only .bl-card .bl-who em{font-size:15px;padding:3px 11px}
+body.scene-only .bl-card .bl-line{font-size:23px;margin-top:8px}
+body.scene-only .bl-ticker{margin-top:18px}
+body.scene-only .bl-tk-pill{font-size:15px;padding:5px 14px 5px 5px;max-width:190px}
+body.scene-only .bl-tk-pill img{width:24px;height:24px}
+body.scene-only .bl-tk-label{font-size:12px}
+
+/* 窄屏兜底 */
+@media (max-width:760px){
+  .bl-card{width:94%}
+  .bl-ticker{max-width:94%}
+  .bl-card .bl-line{font-size:14px}
+}
+
+/* ---------- 操作台右栏：独立滚动，避免左侧留大片空白 ---------- */
+.layout{align-items:start}
+.side{
+  position:sticky;top:14px;
+  max-height:calc(100vh - 96px);
+  overflow-y:auto;overflow-x:hidden;
+  padding-right:6px;
+  scrollbar-width:thin;scrollbar-color:#5a4130 transparent;
+}
+.side::-webkit-scrollbar{width:6px}
+.side::-webkit-scrollbar-thumb{background:#5a4130;border-radius:6px}
+.side::-webkit-scrollbar-track{background:transparent}
+.panel-fold{font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;letter-spacing:0}
+
+/* flex 子项被压扁的修复：右栏面板保持自身高度 */
+.side>.panel{flex:0 0 auto}
+
+/* ---------- 纯画面（OBS/OBS 采集）模式：铺满 + 只留 3D 与祝福层 ---------- */
+body.scene-only .canvas{width:100vw!important;height:100vh!important}
+body.scene-only main>*:not(.layout){display:none!important}
+body.scene-only .layout>*:not(section.panel){display:none!important}
+body.scene-only section.panel>*:not(#stage){display:none!important}
+body.scene-only #mascot{left:auto;right:22px;bottom:22px}
+
+/* 右上角计数在小屏/浅色墙面上也要清晰 */
+.bl-count{
+  padding:7px 14px 8px;border-radius:12px;
+  background:linear-gradient(180deg,rgba(60,20,14,.62),rgba(34,12,9,.56));
+  border:1px solid rgba(224,180,90,.32);
+  backdrop-filter:blur(4px)
+}
+
+/* 竖屏下方地面外的空白：把渐隐合进已有的 veil 里，不能盖住祝福卡 */
+#blessing-layer > *:not(.bl-veil):not(.bl-grain):not(.bl-count){position:relative;z-index:1}
+#blessing-layer > .bl-count{z-index:2}
+body.scene-only #mascot{display:none!important}
+
+/* 3D 画布按输出比例居中显示，避免竖屏输出把操作台撑歪 */
+#stage canvas{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:auto!important;height:auto!important;
+  max-width:100%!important;max-height:100%!important;
+  display:block
+}
+
+/* 画布空余区（竖屏预览两侧）与调试角标 */
+#stage{background:radial-gradient(ellipse at 50% 46%,#2b1c15,#150d0a 62%,#100a08)}
+#bg-status{display:none!important}
